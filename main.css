@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Container */
+  .header-container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 8px 6px -6px black;
+    padding: 0 20px;
+    position: fixed;
+  }
+  
+  .header-container:hover {
+    background-color: rgb(41, 15, 15);
+  }
+  
+  .header-container a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px;
+    color: blue;
+  }
+  
+  .header-container a:hover {
+    color: white;
+  }
+  
+  /* Reset Button */
+  #reset {
+    padding-left: 50px;
+  }
+  
+  /* Logo */
+  .logo {
+    height: 70px;
+    width: 70px;
+  }
+  
+  .logo img {
+    height: 100%;
+    border-radius: 50%;
+    width: 100%;
+  }
+  
+  /* Search Input */
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  input {
+    height: 30px;
+    width: 200px;
+    border: none;
+    outline: none;
+    box-shadow: inset 0 0 10px #cfcaca;
+    font-size: 14px;
+    padding-left: 5px;
+    color: grey;
+  }
+  
+  /* Search Button */
+  button {
+    height: 30px;
+    width: 60px;
+    font-size: 14px;
+    background-color: #afaaaa;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: aliceblue;
+    color: rgb(24, 236, 66);
+  }
+  
+  /* User Image */
+  .user {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .user img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Meal Container */
+  .meal {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px 2px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Meal Image */
+  .meal img {
+    width: 40%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Meal Name */
+  .meal h2 {
+    margin: 11px 0;
+    font-size: 20px;
+    text-align: center;
+    color: blue;
+  }
+  
+  /* Remove Button */
+  .meal button {
+    height: 30px;
+    width: 80px;
+    font-size: 14px;
+    background-color: #afaaaa;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button-container button {
+    margin-right: 30px;
+  }
+  
+  .button-container button:last-child {
+    margin-right: 0;
+  }
+  
+  .meal button:hover {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Description */
+  .description {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  /* Paragraph */
+  p {
+    font-size: 16px;
+    margin-left: 10px;
+    word-spacing: 3px;
+    line-height: 1.5;
+  }
+  
+  /* Media Queries */
+  
+  /* Mobile Devices */
+  @media only screen and (max-width: 600px) {
+    .header-container {
+      height: 60px;
+    }
+  
+    .header-container a {
+      font-size: 16px;
+    }
+  
+    .logo {
+      height: 50px;
+      width: 50px;
+    }
+  
+    .logo img {
+      border-radius: 50%;
+    }
+  
+    .search {
+      gap: 3px;
+    }
+  
+    input {
+      height: 25px;
+      width: 150px;
+      font-size: 12px;
+    }
+  
+    button {
+      height: 25px;
+      width: 50px;
+      font-size: 12px;
+    }
+  
+    .user {
+      height: 40px;
+      width: 40px;
+    }
+  
+    .user img {
+      border-radius: 50%;
+    }
+  
+    .meal img {
+      max-height: 120px;
+    }
+  
+    .meal h2 {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+  
+    .meal button {
+      height: 25px;
+      width: 70px;
+      font-size: 12px;
+    }
+  }
+  
+  /* Tablet Devices */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .header-container {
+      height: 70px;
+    }
+  
+    .header-container a {
+      font-size: 18px;
+    }
+  
+    .logo {
+      height: 60px;
+      width: 60px;
+    }
+  
+    .logo img {
+      border-radius: 50%;
+    }
+  
+    input {
+      height: 28px;
+      width: 180px;
+      font-size: 13px;
+    }
+  
+    button {
+      height: 28px;
+      width: 55px;
+      font-size: 13px;
+    }
+  
+    .user {
+      height: 50px;
+      width: 50px;
+    }
+  
+    .user img {
+      border-radius: 50%;
+    }
+  
+    .meal img {
+      max-height: 130px;
+    }
+  
+    .meal h2 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+  
+    .meal button {
+      height: 28px;
+      width: 75px;
+      font-size: 13px;
+    }
+  }
+  
+  /* Laptop and Desktop Devices */
+  @media only screen and (min-width: 1025px) {
+    .header-container {
+      height: 80px;
+    }
+  
+    .header-container a {
+      font-size: 20px;
+    }
+  
+    .logo {
+      height: 70px;
+      width: 70px;
+    }
+  
+    input {
+      height: 30px;
+      width: 200px;
+      font-size: 14px;
+    }
+  
+    button {
+      height: 30px;
+      width: 60px;
+      font-size: 14px;
+    }
+  
+    .user {
+      height: 60px;
+      width: 60px;
+    }
+  
+    .meal img {
+      max-height: 150px;
+    }
+  
+    .meal h2 {
+      margin: 11px 0;
+      font-size: 20px;
+    }
+  
+    .meal button {
+      height: 30px;
+      width: 80px;
+      font-size: 14px;
+    }
+  }
+  
+    
+  
